@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+.glass-container {
+background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  }
+  .fieldset {
+    border-radius: 10px;
+  }
+  .support {
+    margin-top: 20px;
+    background: linear-gradient(45deg, #ff5fa2, #8b5cf6);
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+
+  }
+  .ahred {
+    text-decoration: none;
+  }
+  .support a {
+    text-decoration: none;
+  }

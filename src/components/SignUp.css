@@ -1,0 +1,140 @@
+/* RESET (important for responsiveness) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAGE CONTAINER */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* GLASS CARD */
+.sub-container {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* TITLE */
+h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+.form-control {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+/* INPUT GROUPS */
+.names {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+
+.names label {
+  font-size: 13px;
+  margin-bottom: 2px;   /* closer */
+  display: inline-block;
+  opacity: 0.85;
+}
+
+.names input {
+  width: 100%;
+  padding: 14px 16px;
+
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  outline: none;
+
+  font-size: 15px;
+}
+.names input:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.3);
+}
+
+.names input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* BUTTON CONTAINER (CENTERED) */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+/* BUTTON */
+.btn-container button {
+  width: 100%;
+  max-width: 260px;
+  padding: 14px;
+
+  border-radius: 30px;
+  border: none;
+
+  background: linear-gradient(45deg, #ff5fa2, #8b5cf6);
+  color: white;
+
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-container button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* FOOTER TEXT */
+.already-acc {
+  text-align: center;
+  font-size: 14px;
+}
+
+.already-acc a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff5fa2;
+}
+
+/* 📱 SMALL DEVICES */
+@media (max-width: 480px) {
+  .sub-container {
+    padding: 24px 18px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .btn-container button {
+    max-width: 100%;
+  }
+}
